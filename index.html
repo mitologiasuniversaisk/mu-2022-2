@@ -1,572 +1,108 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <title>Book Block</title>
-        <meta charset='utf-8' lang='pt-br' />
-        <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
-        
-        <!-- FONTES -->
-        <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.0.13/css/all.css' integrity='sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp' crossorigin='anonymous'>
-        <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet'>
-        
-        <!-- CSS -->
-        <link rel='icon' type='image/png' href='#' />
-        <link type='text/css' rel='stylesheet' href='css/materialize.min.css' media='screen,projection' />
-        <link href='src/jquery.booklet.latest.css' type='text/css' rel='stylesheet' media='screen, projection, tv' />
-        <link type='text/css' rel='stylesheet' href='css/menu.css' />
-        <link type='text/css' rel='stylesheet' href='css/custom.css' />
-        
-        <!-- JS 1/2 -->
-        <script type='text/javascript' src='js/jquery-3.2.1.min.js'></script>
-        <script type='text/javascript' src='js/materialize.min.js'></script>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Margord - Mitologias Universais - 2022.2</title>
 
-        <script src='src/jquery-ui-1.10.4.min.js'></script>
-        <script src='src/jquery.easing.1.3.js'></script>
-        <script src='src/jquery.booklet.latest.js'></script>
-        
-        <script src='https://unpkg.com/tippy.js@2.5.2/dist/tippy.all.min.js'></script>
-    </head>
-    <body class='hero-bkg-animated'>
-        <main>
-            <div class='section no-pad-bot' id='index-banner'>
-                <div class='row'>
-                    <div class='col l3 s12 center container'>
-                        <h1 class='font-teste borda-texto' style='color: black;margin-top: 120px;'><b>Book Block</b></h1>
-                        <h5 class='font-teste2 borda-texto' style='color: #ECE9E9;'>Preview</h5>
-                        <p class='center white-text'><u>Utilize as setas do teclado ou as setas abaixo para paginar a agenda.</u></p>
-                        <a class='white btn-small' id='prev_book'><i class='tiny material-icons black-text'>arrow_back</i></a>
-                        <a class='white btn-small' id='next_book'><i class='tiny material-icons black-text'>arrow_forward</i></a><br>
-                        <a class='white btn-small black-text' id='sumario_book' style='margin-top: 4px;'><i class='tiny material-icons black-text'>book</i> Sumário</a>
-                        <div class='hide-on-med-and-up'>
-                            <div style='border: 1px solid white;margin-top: 10px;margin-left: 20px;'>
-                                <h5 class='font-teste2 borda-texto' style='color: #ECE9E9;background-color: #9E0C0C;'>Ops, a versão mobile no momento se encontra indisponível, por favor volte mais tarde.</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class='col l9 s12'>
-                        <!-- VERSÃO MOBILE -->
-                        <!-- VERSÃO DESKTOP -->
-                        <div class='hide-on-small-only' id='mybook'>
-                            <!-- CAPA -->
-                            <div class='row fundo_book'>
-                                <div class='container'>
-                                    <div class='col s12'  style='margin-top: 20px;'>
-                                        <h1 class='font-primary borda-texto-preto center' style='color: black;font-size: 90px;margin-top: 200px;'><b>CaPa</b></h1>
-                                        <!-- <h1 class='font-primary borda-texto center' style='color: #9E0C0C;;font-size: 60px;margin-top: 80px;margin-right: 100px;'><b>2000</b></h1> -->
-                                        <!-- <h1 class='font-primary borda-texto-preto center' style='color: black;font-size: 60px;'><b>3000</b></h1> -->
-                                        <!-- <h1 class='font-primary borda-texto-preto center' style='color: black;font-size: 60px;margin-left: 100px;'><b>4000</b></h1> -->
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- CONTRA CAPA -->
-                            <div class='row fundo_book'>
-                                <div class='container'>
-                                    <div class='col s12 white'  style='margin-top: 20px;padding-right: 500px;height: 560px;'>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- SOBRE MIM -->
-                            <div>
-                                <div class='container'>
-                                    <div class='col s12'>
-                                        <h1 class='font-teste2 borda-texto-preto center' style='font-size: 50px;'>Lorem ipsum</h1>
-                                        <div class='row'>
-                                                <div class='col s3'>
-                                                    <img src='img/profile_comentario.png' class='responsive-img circle' style='border: 2px solid black;'/></div>
-                                                <div class='col s9'>
-                                                    <h5 class='font-secondary borda-texto-preto2' style='font-size: 30px;'><i class='material-icons orange-text tiny'>star</i> Nam consequat eu ligula nec scelerisque</h5>
-                                                </div>
-                                                <div class='col s6'>
-                                                    <blockquote style='border-left: 5px solid #9E0C0C;'>
-                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                                    </blockquote>
-                                                </div>
-                                                <div class='col s6'>
-                                                    <blockquote style='border-left: 5px solid #9E0C0C;'>
-                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                                    </blockquote>
-                                                    </div>
-                                                <div class='col s12'>
-                                                        <h5 class='font-secondary borda-texto-preto2 center' style='font-size: 30px;margin-bottom: -15px;'>Skills</h5>
-                                                        <div class='col s6'>
-                                                            <blockquote style='border-left: 1px solid transparent;'>
-                                                                <p style='font-size: 13px;'>
-                                                                HTML5 <i class='material-icons' style='font-size: 10px;'>lens lens lens</i><br>
-                                                                    CSS3 <i class='material-icons' style='font-size: 10px;'>lens lens lens</i><br>
-                                                                    JS <i class='material-icons' style='font-size: 10px;'>lens lens panorama_fish_eye</i><br>
-                                                                    JQuery <i class='material-icons' style='font-size: 10px;'>lens lens panorama_fish_eye</i><br>
-                                                                    PHP <i class='material-icons' style='font-size: 10px;'>lens lens lens</i><br>
-                                                                    JavaDsk <i class='material-icons' style='font-size: 10px;'>lens lens panorama_fish_eye</i><br>
-                                                                    Python <i class='material-icons' style='font-size: 10px;'>lens lens panorama_fish_eye</i>
-                                                                </p>
-                                                            </blockquote>
-                                                        </div>
-                                                        <div class='col s6'>
-                                                            <blockquote style='border-left: 1px dashed black;'>
-                                                                <p style='font-size: 13px;'>
-                                                                C/C++ <i class='material-icons' style='font-size: 10px;'>lens panorama_fish_eye panorama_fish_eye</i><br>
-                                                                    MySQL <i class='material-icons' style='font-size: 10px;'>lens lens lens</i><br>
-                                                                    mPDF <i class='material-icons' style='font-size: 10px;'>lens lens panorama_fish_eye</i><br>
-                                                                    pearPHP <i class='material-icons' style='font-size: 10px;'>lens lens panorama_fish_eye</i><br>
-                                                                    Materialize <i class='material-icons' style='font-size: 10px;'>lens lens lens</i><br>
-                                                                    Bootstrap <i class='material-icons' style='font-size: 10px;'>lens panorama_fish_eye panorama_fish_eye</i>
-                                                                    MariaDB <i class='material-icons' style='font-size: 10px;'>lens lens lens</i>
-                                                                </p>
-                                                            </blockquote>
-                                                        </div>
-                                                <img src='img/divisoria.png' class='responsive-img'/>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <! -- SUMARIO -->
-                            <div>
-                                <div class='container'>
-                                    <div class='col s12'>
-                                        <h1 class='font-teste2 borda-texto-preto center' style='font-size: 50px;'>Sumário</h1>
-                                        <div class='row'>
-                                            <div class='col s11'>
-                                                <blockquote style='border-left: 5px solid #9E0C0C;'>
-                                                    <p>
-                                                    1   Lorem ipsum lens .........................................................<br>
-                                                    1.1 Lorem ipsum lens ......................................................<br>
-                                                    1.2 Lorem ipsum lens ......................................................<br>
-                                                    1.3 Lorem ipsum lens ......................................................<br>
-                                                    2   Lorem ipsum lens .........................................................<br>
-                                                    2.1 Lorem ipsum lens ......................................................<br>
-                                                    2.2 Lorem ipsum lens ......................................................<br>
-                                                    2.3 Lorem ipsum lens ......................................................<br>
-                                                    3   Lorem ipsum lens .........................................................<br>
-                                                    3.1 Lorem ipsum lens ......................................................<br>
-                                                    3.3 Lorem ipsum lens ......................................................<br>
-                                                    3.2 Lorem ipsum lens ......................................................
-                                                    </p>
-                                                </blockquote>
-                                            </div>
-                                            <div class='col s1'>
-                                                <a id='cinco' href='#!'><i class='material-icons tiny'></i></a>
-                                                <a id='cinco' href='#'><i class='material-icons tiny' style='color: #9E0C0C;' >send</i></a>
-                                                <a id='seis' href='#'><i class='material-icons tiny' style='color: #9E0C0C;' >send</i></a>
-                                                <a id='sete' href='#'><i class='material-icons tiny' style='color: #9E0C0C;' >send</i></a>
-                                                <a id='oito' href='#'><i class='material-icons tiny' style='color: #9E0C0C;' >send</i></a>
-                                                <a id='nove' href='#'><i class='material-icons tiny' style='color: #9E0C0C;' >send</i></a>
-                                                <a id='dez' href='#'><i class='material-icons tiny' style='color: #9E0C0C;' >send</i></a>
-                                                <a id='onze' href='#'><i class='material-icons tiny' style='color: #9E0C0C;' >send</i></a>
-                                                <a id='doze' href='#'><i class='material-icons tiny' style='color: #9E0C0C;' >send</i></a>
-                                                <a id='treze' href='#'><i class='material-icons tiny' style='color: #9E0C0C;' >send</i></a>
-                                                <a id='quatorze' href='#'><i class='material-icons tiny' style='color: #9E0C0C;' >send</i></a>
-                                                <a id='quinze' href='#'><i class='material-icons tiny' style='color: #9E0C0C;' >send</i></a>
-                                                <a id='dezesseis' href='#'><i class='material-icons tiny' style='color: #9E0C0C;' >send</i></a>
-                                            </div>
-                                        </div>
-                                        <img src='img/divisoria.png' class='responsive-img' style='margin-top: 30px;'/>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- 2016 -->
-                            <div class='row fundo_book2'>
-                                <div class='container'>
-                                    <div class='col s12'  style='margin-top: 20px;'>
-                                        <h1 class='font-primary borda-texto center' style='color: #9E0C0C;font-size: 150px;'><b>1</b></h1>
-                                        <h1 class='center'><i class='borda-texto material-icons' style='font-size: 12rem;color: #9e0c0c;'>school</i></h1>
-                                        <img src='img/flor_left.png' class='responsive-img left'>
-                                        <img src='img/flor_right.png' class='responsive-img right'>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- 2016/01 -->
-                            <div>
-                                <div class='container'>
-                                    <div class='ribbon_esquerda'>
-                                        <span>1º</span>
-                                    </div>
-                                    <div class='col s12'>
-                                        <blockquote style='border-left: 5px solid #9E0C0C;'><h1 class='font-teste2 borda-texto-preto2' style='font-size: 30px;'>Subjects</h1></blockquote>
-                                        <div class='row'>
-                                            <div class='col s12' style='margin-top: -25px;margin-bottom: -35px;'>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat eu ligula nec scelerisque. Nam at rhoncus magna, tincidunt sodales ligula.</p>
-                                            </div>
-                                            <div class='col s6 center'>
-                                                <p class='font-secondary center borda-texto-preto2' style='font-size: 25px;margin-bottom: -5px;'>Lorem ipsum</p>
-                                                <img title='Português, Inglês e Espanhol' data-tippy-placement='left'  data-tippy-theme='light' src='img/ptesin.png' class='responsive-img circle btnt' style='border: 3px solid #9E0C0C;height: 60px;width: 60px;'/>
-                                                <img src='img/artes.png' class='responsive-img circle btnt' title='Artes' data-tippy-placement='right' data-tippy-theme='light' style='border: 3px solid #9E0C0C;height: 60px;width: 60px;'/>
-                                                <img src='img/edfisica.png' class='responsive-img circle btnt' title='Educação Física' data-tippy-placement='left' data-tippy-theme='light' style='border: 3px solid #9E0C0C;height: 60px;width: 60px;'/>
-                                            </div>
-                                            <div class='col s6 center'>
-                                                <p class='font-secondary center borda-texto-preto2' style='font-size: 25px;margin-bottom: -5px;'>Lorem ipsum</p>
-                                                <img src='img/geografia.png' class='responsive-img circle btnt' title='Geografia' data-tippy-placement='left' data-tippy-theme='light' style='border: 3px solid #9E0C0C;height: 60px;width: 60px;'/>
-                                                <img src='img/historia.jpg' class='responsive-img circle btnt' title='História' data-tippy-placement='right' data-tippy-theme='light' style='border: 3px solid #9E0C0C;height: 60px;width: 60px;'/>
-                                                <img src='img/sociologia.png' class='responsive-img circle btnt' title='Sociologia' data-tippy-placement='left' data-tippy-theme='light' style='border: 3px solid #9E0C0C;height: 60px;width: 60px;'/>
-                                                <img src='img/filosofia.png' class='responsive-img circle btnt' title='Filosofia' data-tippy-placement='right' data-tippy-theme='light' style='border: 3px solid #9E0C0C;height: 60px;width: 60px;'/>
-                                            </div>
-                                            <div class='col s6 center'>
-                                                <p class='font-secondary center borda-texto-preto2' style='font-size: 25px;margin-bottom: -5px;'>Lorem ipsum</p>
-                                                <img src='img/matematica.png' class='responsive-img circle btnt' title='Matemática' data-tippy-placement='right' data-tippy-theme='light' style='border: 3px solid #9E0C0C;height: 60px;width: 60px;'/>
-                                            </div>
-                                            <div class='col s6 center'>
-                                                <p class='font-secondary center borda-texto-preto2' style='font-size: 25px;margin-bottom: -5px;'>Lorem ipsum</p>
-                                                <img src='img/biologia.png' class='responsive-img circle btnt' title='Biologia' data-tippy-placement='left' data-tippy-theme='light' style='border: 3px solid #9E0C0C;height: 60px;width: 60px;'/>
-                                                <img src='img/quimica.png' class='responsive-img circle btnt' title='Química' data-tippy-placement='right' data-tippy-theme='light' style='border: 3px solid #9E0C0C;height: 60px;width: 60px;'/>
-                                                <img src='img/fisica.png' class='responsive-img circle btnt' title='Física' data-tippy-placement='left' data-tippy-theme='light' style='border: 3px solid #9E0C0C;height: 60px;width: 60px;'/>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- 2016/02 -->
-                            <div>
-                                <div class='ribbon'>
-                                  <span class='ribbon2'><i class='material-icons' style='z-index: 99;margin-top: 5px;'>favorite_border</i></span>
-                                </div>
-                                <div class='container'>
-                                    <div class='col s12'>
-                                        <center><blockquote style='border-left: 5px solid transparent;'><h1 class='font-teste2 borda-texto-preto2' style='font-size: 30px;'>Friends</h1></blockquote></center>
-                                        <div class='row'>
-                                            <div class='col s12'>
-                                                <img src='img/amigos.jpg' class='responsive-img' style='border: 1px dashed black;' />
-                                                <p style='margin-bottom: -40px;'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat eu ligula nec scelerisque. Maecenas dictum rutrum malesuada. Proin tempus in lacus sed mollis. Mauris rutrum lacinia elit, id auctor elit suscipit venenatis. </p>
-                                            </div>
-                                        </div>
-                                        <img src='img/divisoria.png' class='responsive-img' style='margin-top: 30px;'/>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- 2016/03 -->
-                            <div class='row fundo2016_3'>
-                                <div class='container'>
-                                    <div class='ribbon_esquerda'>
-                                        <span>1º</span>
-                                    </div>
-                                    <div class='col s12'>
-                                        <blockquote style='border-left: 5px solid #9c27b0;'><h1 class='font-teste2 borda-texto' style='font-size: 30px;'>Work</h1></blockquote>
-                                        <div class='row'>
-                                            <div class='col s12' style='margin-top: -25px;'>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat eu ligula nec scelerisque. Nam at rhoncus magna, tincidunt sodales ligula.</p>
-                                                <img src='img/socialteen.png' class='responsive-img' style='border: 2px solid gray;' />
-                                            </div>
-                                            <div class='col s4'>
-                                                <img src='img/st.png' class='responsive-img' />
-                                            </div>
-                                            <div class='col s8'>
-                                                <blockquote style='border-left: 5px solid #9c27b0;'>
-                                                    <p> ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat eu ligula nec scelerisque. Nam at rhoncus magna, tincidunt sodales lig.</p>
-                                                </blockquote>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- 2017 -->
-                            <div class='row fundo_book3'>
-                                <div class='container'>
-                                    <div class='col s12'  style='margin-top: 20px;'>
-                                        <h1 class='font-primary borda-texto center' style='color: #ef08f4;font-size: 150px;margin-bottom: -20px;'><b>2</b></h1>
-                                        <img src='img/divisoria_1.png' class='center responsive-img'/>
-                                        <h1 class='center'><img src='img/folha_esquerda.png' class='responsive-img' style='width: 30%px;height: 30%px;' /><i class='borda-texto material-icons' style='font-size: 12rem;color: #ef08f4;margin-left: -55px;margin-right: -55px;'>spa</i><img src='img/folha_direita.png' class='responsive-img' style='width: 30%px;height: 30%px;' /></h1>
-                                        <i class='borda-texto material-icons' style='color: white;'>star star star star star star star star star star star star star</i>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- 2017/01 -->
-                            <div class='row fundo_cinzaclaro'>
-                                <div class='container'>
-                                    <div class='ribbon_esquerda1'>
-                                        <span>2º</span>
-                                    </div>
-                                    <div class='col s12'>
-                                        <blockquote style='border-left: 5px solid #ef08f4;'><h1 class='font-teste2 borda-texto2' style='font-size: 30px;'>New Contents</h1></blockquote>
-                                        <div class='row'>
-                                            <div class='col s12' style='margin-top: -25px;'>
-                                                <p class='white-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat eu ligula nec scelerisque. Nam at rhoncus magna.</p>
-                                                <div class='col s12'>
-                                                    <div class='col s4 center'>
-                                                        <img src='img/profile.png' class='responsive-img circle' style='border: 2px dotted white;width: 100px;height: 100px;' />
-                                                    </div>
-                                                    <div class='col s8'>
-                                                        <p class='font-secondary' style='color: #ef08f4;margin-top: -10px;margin-bottom: -28px;display:block;font-size: 25px;'>Example1</p>
-                                                        <p class='white-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.aaaaa aaaaaaaa aaaaaa aaaaaa aaaaaaaa aaaaaaaa aaaaaa.</p>
-                                                    </div>
-                                                </div>
-                                                <div class='col s12'>
-                                                    <div class='col s4 center'>
-                                                        <img src='img/profile.png' class='responsive-img circle' style='border: 2px dotted white;width: 100px;height: 100px;' />
-                                                    </div>
-                                                    <div class='col s8'>
-                                                        <p class='font-secondary' style='color: #ef08f4;margin-top: -10px;margin-bottom: -28px;display:block;font-size: 25px;'>Example1</p>
-                                                        <p class='white-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                                    </div>
-                                                </div>
-                                                <div class='col s12'>
-                                                    <div class='col s4 center'>
-                                                        <img src='img/profile.png' class='responsive-img circle' style='border: 2px dotted white;width: 100px;height: 100px;' />
-                                                    </div>
-                                                    <div class='col s8'>
-                                                        <p class='font-secondary' style='color: #ef08f4;margin-top: -10px;margin-bottom: -28px;display:block;font-size: 25px;'>Example1</p>
-                                                        <p class='white-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <img src='img/divisoria_1.png' class='responsive-img'/>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- 2017/02 -->
-                            <div class='row fundo_cinzaescuro'>
-                                <div class='container'>
-                                    <div class='ribbon'>
-                                  <span class='ribbon4'><i class='material-icons small' style='z-index: 99;margin-top: 5px;color: #009f00;'>sentiment_very_satisfied</i></span>
-                                </div>
-                                <div>
-                                    <div class='col s12'>
-                                        <center><h1 class='font-teste2 borda-texto2' style='font-size: 30px;margin-left: 40px;'>Technical Language</h1></center>
-                                        <div class='row'>
-                                            <div class='col s12'>
-                                                <div class='col s12'>
-                                                    <div class='col s4 center'>
-                                                        <img src='img/php.jpg' class='responsive-img' style='border: 3px solid white;' />
-                                                    </div>
-                                                    <div class='col s8'>
-                                                        <p class='font-secondary' style='color: #009f00;margin-top: -10px;margin-bottom: -28px;display:block;font-size: 25px;'>Example1</p>
-                                                        <p class='white-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.aaaaa aaaaaaaa aaaaaa aaaaaa.</p>
-                                                    </div>
-                                                </div>
-                                                <div class='col s12'>
-                                                    <h1 class='center' style='padding-top: 5px;background-color: transparent;border-top: 2px solid #009f00;border-bottom: 2px solid #009f00;margin-top: -1px;'></h1>
-                                                    <blockquote class='white-text' style='border-left: 5px solid #009f00;'>
-                                                        <p> ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat eu ligula nec scelerisque. Nam at rhoncus magna, tincidunt sodales lig.</p>
-                                                    </blockquote>
-                                                    <h1 class='center' style='padding-top: 5px;background-color: transparent;border-top: 2px solid #009f00;border-bottom: 2px solid #009f00;'></h1>
-                                                </div>
-                                                <div class='col s12'>
-                                                    <div class='col s4 center'>
-                                                        <img src='img/php_mysql.jpg' class='responsive-img' style='border: 3px solid white;height: 90px;width: 100px;' />
-                                                    </div>
-                                                    <div class='col s8'>
-                                                        <p class='font-secondary' style='color: #009f00;margin-top: -10px;margin-bottom: -28px;display:block;font-size: 25px;'>Example1</p>
-                                                        <p class='white-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.aaaaa aaaaaaaa aaaaaa aaaaaa.</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <img src='img/divisoria_1.png' class='responsive-img'/>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-                            <!-- 2017/03 -->
-                            <div class='row fundo_cinzaclaro'>
-                                <div class='container'>
-                                    <div class='ribbon_esquerda1'>
-                                        <span>2º</span>
-                                    </div>
-                                    <div class='col s12'>
-                                        <blockquote style='border-left: 5px solid #ff9800;'><h1 class='font-teste2 borda-texto2' style='font-size: 30px;'>Lorem ipsum</h1></blockquote>
-                                        <div class='row'>
-                                            <div class='col s12' style='margin-top: -25px;'>
-                                                <p class='white-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                                <img src='img/lamexico.png' class='responsive-img' style='border: 2px dashed #ff9800;' />
-                                                <div style='background: 50% url(img/fundo_2017_3.png);padding-top: 60px;margin-top: 5px;'></div>
-                                                <div class='col s12'>
-                                                    <div class='col s1' style='background-image: url(img/divisoria_2.png);padding: 0px 5px 120px 5px;width: 10px;'></div>
-                                                    <div class='col s10'>
-                                                        <p class='white-text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat eu ligula nec scelerisque. Nam at rhoncus magna.</p>
-                                                    </div>
-                                                    <div class='col s1 push-s1' style='background-image: url(img/divisoria_2.png);padding: 0px 5px 120px 5px;width: 10px;'></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- 2018 -->
-                            <div class='row fundo_book4'>
-                                <div class='container'>
-                                    <div class='col s12'  style='margin-top: 20px;'>
-                                        <h1 class='font-primary borda-texto center' style='color: #002053;font-size: 40px;margin-top: -30px;margin-bottom: -20px;'><b>_ _ _ _ _ _ _ _ _</b></h1>
-                                        <h1 class='font-primary borda-texto center' style='color: #002053;font-size: 150px;'><b>3</b></h1>
-                                        <h1 class='font-primary borda-texto center' style='color: #002053;font-size: 40px;margin-top: -40px;'><b>_ _ _ _ _ _ _ _ _</b></h1>
-                                        <h1 class='center'><i class='borda-texto material-icons' style='font-size: 12rem;color: #002053;'>free_breakfast</i></h1>
-                                        <h1 class='font-primary borda-texto center' style='color: #002053;font-size: 70px;margin-top: -50px;'><b>Last caption</b></h1>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- 2018/01 -->
-                            <div>
-                                <div class='container'>
-                                    <div class='ribbon_esquerda'>
-                                        <span>3º</span>
-                                    </div>
-                                    <div class='col s12'>
-                                        <blockquote style='border-left: 5px solid #002053;'><h1 class='font-teste2 borda-texto-preto2' style='font-size: 30px;'>Lorem ipsum dolor sit amet</h1></blockquote>
-                                        <div class='col s12' style='background-color: #708090;margin-bottom: 10px;' >
-                                            <p style='border-top: 1px dashed white;border-bottom: 1px dashed white;'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat eu ligula nec scelerisque. Nam at rhoncus magna.</p>
-                                        </div>
-                                        <div class='row'>
-                                            <div class='col s12'>
-                                                    <div class='col s4 center' style=''>
-                                                            <img src='img/livros.png' class='responsive-img circle' style='width: 100px;height: 100px;border: 3px solid #002053;' />
-                                                    </div>
-                                                    <div class='col s8'>
-                                                        <p class='font-secondary borda-texto-preto2' style='margin-top: -10px;margin-bottom: -28px;display:block;font-size: 25px;'>Example1</p>
-                                                        <blockquote style='border-left: 5px solid #708090;'>
-                                                            <p> ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                                        </blockquote>
-                                                    </div>
-                                                </div>
-                                                <div class='col s12'>
-                                                    <div class='col s4 center' style=''>
-                                                        <img src='img/ads.jpg' class='responsive-img circle' style='width: 100px;height: 100px;border: 3px solid #002053;' />
-                                                    </div>
-                                                    <div class='col s8'>
-                                                        <p class='font-secondary borda-texto-preto2' style='margin-top: -10px;margin-bottom: -28px;display:block;font-size: 25px;'>Example1</p>
-                                                        <blockquote style='border-left: 5px solid #708090;'>
-                                                            <p> ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                                        </blockquote>
-                                                    </div>
-                                                </div>
-                                                <div class='col s12'>
-                                                    <div class='col s4 center' style=''>
-                                                        <img src='img/duvida.png' class='responsive-img circle' style='width: 100px;height: 100px;border: 3px solid #002053;' />
-                                                    </div>
-                                                    <div class='col s8'>
-                                                        <p class='font-secondary borda-texto-preto2' style='margin-top: -10px;margin-bottom: -28px;display:block;font-size: 25px;'>Example1</p>
-                                                        <blockquote style='border-left: 5px solid #708090;'>
-                                                            <p> ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                                        </blockquote>
-                                                    </div>
-                                                </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- 2018/02 -->
-                            <div>
-                                <div class='ribbon'>
-                                  <span class='ribbon3'><i class='material-icons' style='z-index: 99;margin-top: 5px;'>content_paste</i></span>
-                                </div>
-                                <div class='container'>
-                                    <div class='col s12'>
-                                        <center><blockquote style='border-left: 5px solid transparent;'><h1 class='font-teste2 borda-texto-preto2' style='font-size: 30px;'><i class='material-icons blue-text'>star</i> Lorem ipsum dolor sit amet</h1></blockquote></center>
-                                        <div class='row'>
-                                            <div class='col s12'>
-                                                <img src='img/estagio.png' class='responsive-img' style='border: 1px dashed black;' />
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam consequat eu ligula nec scelerisque. </p>
-                                                <div class='col s12'>
-                                                    <div class='col s3'>
-                                                        <img src='img/estagiario.png' style='width: 60px;height: 60px;border: 1px dashed #0099FF;' class='responsive-img circle'/>
-                                                    </div>
-                                                    <div class='col s9'>
-                                                        <blockquote class='white' style='border-left: 5px solid #0099FF;'>
-                                                            <p> ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                                        </blockquote>
-                                                    </div>
-                                                    <div class='col s3'>
-                                                        <img src='img/experiencia.png' style='width: 60px;height: 60px;border: 1px dashed #0099FF;' class='responsive-img circle white'/>
-                                                    </div>
-                                                    <div class='col s9'>
-                                                        <blockquote class='white' style='border-left: 5px solid #0099FF;'>
-                                                            <p> ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                                        </blockquote>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- COMENTÁRIOS -->
-                            <div>
-                                <div class='container'>
-                                    <div class='ribbon_esquerda'>
-                                        <span>Fim</span>
-                                    </div>
-                                    <div class='col s12'>
-                                        <blockquote style='border-left: 5px solid #002053;'><h1 class='font-teste2 borda-texto-preto2' style='font-size: 30px;'>Comments</h1></blockquote>
-                                            <div class='row col s12' style='margin-top: -30px;'>
-                                                <div class='input-field col s12'>
-                                                    <div class='input-field col s8'>
-                                                      <input id='nome' for='nome' minlength='3' name='nome' type='text' class='validate' onkeypress='mascara(this,soLetras)' required>
-                                                      <label for='nome'>Nome*</label>
-                                                    </div>
-                                                    <div class='input-field col s4'>
-                                                        <input class="jscolor" id="cor" />
-                                                    </div>
-                                                    <div class='input-field col s12' id='box_1'>
-                                                        <input id='obs' for='obs' name='obs' class='materialize-textarea validate' maxlength='350' placeholder='Comente aqui.' autocomplete='off' required/>
-                                                    </div>
-                                                    <div class='col s12'>
-                                                        <button class='btn-small' style='background-color: #002053;' type='submit' id='submit'>Enviar comentário<i class='material-icons right'>send</i>
-                                                        </button>
-                                                    </div>
-                                                    <script type='text/javascript'>
-                                                    //     document.getElementById('submit').onclick = function(){
-                                                    //     var nome = document.getElementById('nome');
-                                                    //     var cor = document.getElementById('cor');
-                                                    //     var comentario = document.getElementById('obs');
-                                                    //     if(nome.value != '' && cor.value != '' && comentario.value != ''){
-                                                    //         formData.append('nome', nome.value);
-                                                    //         formData.append('cor', cor.value);
-                                                    //         formData.append('comentario', comentario.value);
-                                                    //         var xmlhttp = new XMLHttpRequest();
-                                                    //         xmlhttp.onreadystatechange=function(){
-                                                    //             if(xmlhttp.readyState===4 && xmlhttp.status===200){
-                                                    //                 document.getElementById('box').innerHTML= xmlhttp.responseText;
-                                                    //             }
-                                                    //         };
-                                                    //         xmlhttp.open('POST','recebe.php',true);
-                                                    //         xmlhttp.send(formData);
-                                                    //     }else{
-                                                    //         alert('Informe todos os campos');
-                                                    //     }
-                                                    // }
-                                                    </script>
-                                                </div>
-                                            </div>
-                                        <div class='row' id='box'>
-                                            <div class='item'>
-                                              <div class='image'>
-                                                <div>
-                                                  <img src='img/profile_comentario.png' />
-                                                  <span class='font-secondary'>
-                                                  09.11.2022
-                                                  </span>
-                                                </div>
-                                              </div>
-                                              <div class='details'>
-                                                <div>
-                                                  <h1 class='font-secondary borda-texto2' style='margin-bottom: -10px;font-size: 25px;-webkit-text-stroke-width: 1px;-webkit-text-stroke-color: #002053;color: #002053;'>Phasellus</h1>
-                                                  <p>Proin condimentum tempus ultrices. Suspendisse vestibulum suscipit. </p>
-                                                </div>
-                                              </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- CONTRA FINAL -->
-                            <div class='row fundo_book'>
-                                <div class='container'>
-                                    <div class='col s12'  style='margin-top: 20px;padding-left: 430px;margin-left: -18px;height: 560px;background-color: #efefef;'>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- FINAL --->
-                            <div class='row fundo_book'>
-                                <div class='container'>
-                                    <div class='col s12 livro'  style='margin-top: 20px;'>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+    <!-- Boostrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    
+    <!-- Booklet css-->
+    <link href="src/booklet/jquery.booklet.latest.css" type="text/css" rel="stylesheet" media="screen, projection, tv" />
+  
+    <!-- Custom css-->
+    <link type='text/css' rel='stylesheet' href='css/main.css' />
+  </head>
+  <body>
+
+    <main>
+        <section class="px-4 py-2 my-1">
+            <div id="margord-book">
+                <!-- Capa  -->
+                <div class="row capa"></div>
+                <div class="row capa-back">
+                    <div class="container text-bg-light capa-back-content">
                     </div>
                 </div>
+
+                <!-- Prefácio / Resumo -->
+                <div>
+                    <div class="container text-center">
+                        <h1 class="titulo">Prefácio/Resumo</h1>
+                    </div>
+
+                </div>
+
+                <!-- Sumário -->
+                <div>
+                    <div class="container text-center">
+                        <h1 class="titulo">Sumário</h1>
+                    </div>
+                </div>
+
+                <!-- Linha do Tempo -->
+                <div>
+                    <div class="container text-center">
+                        <h1 class="titulo">Linha do Tempo</h1>
+                    </div>
+                </div>
+
+                <!-- Mapa -->
+                <div>
+                    <div class="container text-center">
+                        <h1 class="titulo">Mapa - Retrato</h1>
+                    </div>
+                </div>
+                <div>
+                    <div class="container text-center">
+                        <h1 class="titulo">Mapa - Paisagem</h1>
+                    </div>
+                </div>
+
+                <!-- Roteiro -->
+                <div>
+                    <div class="container text-center">
+                        <h1 class="titulo">Roteiro</h1>
+                    </div>
+                </div>
+
+                <!-- Povos -->
+                <div>
+                    <div class="container text-center">
+                        <h1 class="titulo">Povos</h1>
+                    </div>
+                </div>
+
+                <!-- Outros -->
+                <div>
+                    <div class="container text-center">
+                        <h1 class="titulo">Outros</h1>
+                    </div>
+                </div>
+
+                <!-- Contra -->
+                <div class="row contracapa">
+                    <div class="container text-bg-light contracapa-back-content">
+                    </div>
+                </div>
+                <div class="row contracapa"></div>
             </div>
-        </main>
-        <!-- JS 2/2 -->
-        <script type='text/javascript' src='js/book.js'></script>
-        <script type='text/javascript' src='js/init.js'></script>
-        <script src='js/jscolor.js'></script>
-    </body>
+        </section>
+    </main>
+
+    <!-- Boostrap js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+
+    <!-- Booklet js-->
+    <script src='src/booklet/jquery.easing.1.3.js'></script>
+    <script src='src/booklet/jquery.booklet.latest.js'></script>
+
+    <!-- Custom js-->
+    <script type='text/javascript' src='js/init.js'></script>
+  </body>
 </html>

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Shtozer 200';
+    src: local('Shtozer 200 Normal'), local('Shtozer-200-Normal'),
+        url('Shtozer-200Normal.woff2') format('woff2'),
+        url('Shtozer-200Normal.woff') format('woff'),
+        url('Shtozer-200Normal.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }

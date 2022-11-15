@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Shtozer 200';
+    src: local('Shtozer 200 Normal'), local('Shtozer-200-Normal'),
+        url('../font//Shtozer-200Normal/Shtozer-200Normal.woff2') format('woff2'),
+        url('../font/Shtozer-200Normal/Shtozer-200Normal.woff') format('woff'),
+        url('../font//Shtozer-200Normal/Shtozer-200Normal.ttf') format('truetype'),
+        url('../font//Shtozer-200Normal/shtozer-200normal-webfont.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root{
+    --primary-color: #1b1726;
+    --secondary-color: #1b1726;
+}
+
+body{
+    background-color: gray;
+}
+
+.titulo{
+    font-family: 'Shtozer 200';
+}
+
+.capa{
+    background-color: var(--primary-color);
+    background-image: url(../img/book/capa.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+
+.capa-back{
+    background-color: var(--primary-color);
+    height: 600px;
+}
+
+.capa-back-content{
+    margin-left: 2.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.contracapa{
+    background-color: var(--primary-color);
+    height: 600px;
+}
+
+.contracapa-back-content{
+    margin-left: -2.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
