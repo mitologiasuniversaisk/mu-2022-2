@@ -12,6 +12,7 @@
 :root{
     --primary-color: #1b1726;
     --secondary-color: #1b1726;
+    --tertiary-color:rgb(255,255,255)
 }
 
 body{
@@ -20,6 +21,32 @@ body{
 
 .titulo{
     font-family: 'Shtozer 200';
+}
+
+.conteudo{
+    margin-right: 20px;
+    margin-left: 10px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 1.0rem;
+}
+
+.flexText {
+    display: flex;
+    flex-direction: column;
+}
+
+.number-page{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-family: 'Roboto';
+    font-weight: 600;
+}
+
+.separador{
+    height: 20px;
 }
 
 .capa{
@@ -50,4 +77,61 @@ body{
     margin-left: -2.5rem;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+}
+
+/* inicio css sumário */
+.coluna-sumario {
+    position: absolute;
+    width: 30px;
+    background-color: #1b1726;
+    margin-bottom: 10px;
+    height: 100%;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.div-sumario {
+    display: flex;
+}
+
+.descricao-sumario {
+    margin-left: 30px;
+}
+
+.descricao-sumario ul {
+    list-style: none;
+    font-family: 'Shtozer 200';
+    font-size: 1.5rem;
+}
+
+
+/* início linha do tempo */
+.linha-do-tempo{
+    margin-bottom: 20px;
+}
+
+.haste-linha-do-tempo{
+    position: absolute;
+    height: 88%;
+    width: 10px;
+    margin-left:20px;
+    background-color: var(--primary-color);
+}
+
+.title-haste-linha-do-tempo {
+    position: relative;
+    margin-left:20px;
+    height: 22px;
+    background-color: var(--primary-color);
+    text-align: center;
+    color:var(--tertiary-color)
+}
+
+.text-linha-do-tempo{
+    font-family: 'Roboto';
+    font-weight: 600;
+    position: relative;
+    margin-left: 40px;
+    text-align: left;
+    margin-top: 10px;
 }
