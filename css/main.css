@@ -135,3 +135,47 @@ body{
     text-align: left;
     margin-top: 10px;
 }
+
+
+/* inicio mapa */
+.mapa-background {
+        background-image: url(../img/mapa.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 600px;
+}
+
+.mundo-background {
+    background-image: url(../img/mundo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+
+.ilustracao-helväkyr{
+    background-image: url(../img/hel.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+
+.ilustracao-lorde-silvian{
+    background-image: url(../img/lorde-silvian.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+
+.ilustracao-princesa{
+    background-image: url(../img/princesa.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+
+.ilustracao-lorde-sem-nome{
+    background-image: url(../img/lorde-sem-nome.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+}
