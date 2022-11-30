@@ -1,10 +1,8 @@
 @font-face {
-    font-family: 'Shtozer 200';
-    src: local('Shtozer 200 Normal'), local('Shtozer-200-Normal'),
-        url('../font//Shtozer-200Normal/Shtozer-200Normal.woff2') format('woff2'),
-        url('../font/Shtozer-200Normal/Shtozer-200Normal.woff') format('woff'),
-        url('../font//Shtozer-200Normal/Shtozer-200Normal.ttf') format('truetype'),
-        url('../font//Shtozer-200Normal/shtozer-200normal-webfont.svg') format('svg');
+    font-family: 'Augusta';
+    src: local('Augusta'), local('Augusta'),
+        url('../font/Augusta/Augusta.ttf') format('truetype'),
+        url('../font/Augusta/Augusta-Shadow.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
@@ -20,15 +18,15 @@ body{
 }
 
 .titulo{
-    font-family: 'Shtozer 200';
+    font-family: 'Augusta';
 }
 
 .conteudo{
+    text-align: left;
     margin-right: 20px;
-    margin-left: 10px;
-    text-align: center;
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
+    margin-left: 20px;
+    text-align: left;
+    font-family: 'Roboto Serif', serif;
     font-size: 1.0rem;
 }
 
@@ -51,7 +49,7 @@ body{
 
 .capa{
     background-color: var(--primary-color);
-    background-image: url(../img/book/capa.jpg);
+    background-image: url(../img/capa-nova.png);
     background-position: center;
     background-repeat: no-repeat;
     height: 600px;
@@ -82,7 +80,7 @@ body{
 /* inicio css sumário */
 .coluna-sumario {
     position: absolute;
-    width: 30px;
+    width: 10px;
     background-color: #1b1726;
     margin-bottom: 10px;
     height: 100%;
@@ -95,13 +93,17 @@ body{
 }
 
 .descricao-sumario {
-    margin-left: 30px;
+    margin-left: 15px;
 }
 
 .descricao-sumario ul {
     list-style: none;
-    font-family: 'Shtozer 200';
-    font-size: 1.5rem;
+    font-family: 'Roboto Serif', serif;
+    font-size: 1.2rem;
+}
+
+.descricao-sumario ul li{
+    margin-top: 10px;
 }
 
 
@@ -137,25 +139,18 @@ body{
 }
 
 
-/* inicio mapa */
-.mapa-background {
-        background-image: url(../img/mapa.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 600px;
-}
-
-.mundo-background {
-    background-image: url(../img/mundo.png);
+.flexText {
+    background-image: url(../img/estilo-folha.png);
     background-position: center;
     background-repeat: no-repeat;
-    height: 600px;
+    height: 600px; 
 }
 
 .ilustracao-helväkyr{
     background-image: url(../img/hel.png);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     height: 600px;
 }
 
@@ -163,6 +158,7 @@ body{
     background-image: url(../img/lorde-silvian.png);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     height: 600px;
 }
 
@@ -177,5 +173,35 @@ body{
     background-image: url(../img/lorde-sem-nome.png);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     height: 600px;
+}
+
+.marcador{
+    position: relative;
+    border-left: 10px solid var(--primary-color);
+    width: 100%;
+    min-height: 100px;
+    margin-left: 20px;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.mapaPaisagem1 {
+    width: 1201px;
+    position: absolute;
+    top: -67px;
+    position: absolute;
+    left: -148px;
+    height: 734px;
+}
+
+.mapaPaisagem2 {
+    width: 1210px;
+    position: absolute;
+    top: -67px;
+    position: absolute;
+    left: -600px;
+    height: 734px;
 }
