@@ -49,7 +49,7 @@ body{
 
 .capa{
     background-color: var(--primary-color);
-    background-image: url(../img/capa-nova.png);
+    background-image: url(../img/capa.png);
     background-position: center;
     background-repeat: no-repeat;
     height: 600px;
@@ -205,3 +205,54 @@ body{
     left: -600px;
     height: 734px;
 }
+
+.mapa-retrato{
+    background-image: url(../img/mapa-retrato.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* animacao-logo */
+.animacao-logo {
+    position: relative;
+    left: 88px;
+    position: relative;
+    top: 113px;
+}
+
+.img1-animacao {
+    position: absolute;
+    left: 35px;
+    top: 35px;
+    animation: loading 10s linear infinite;
+}
+
+.img3-animacao {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}
+
+.img2-animacao {
+    animation: loading-revert 10s linear infinite;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+@keyframes loading-revert {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/* fim animação logo */
