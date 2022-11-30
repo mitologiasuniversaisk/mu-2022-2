@@ -1,18 +1,30 @@
 @font-face {
     font-family: 'Shtozer 200';
     src: local('Shtozer 200 Normal'), local('Shtozer-200-Normal'),
-        url('../font//Shtozer-200Normal/Shtozer-200Normal.woff2') format('woff2'),
+        url('../font/Shtozer-200Normal/Shtozer-200Normal.woff2') format('woff2'),
         url('../font/Shtozer-200Normal/Shtozer-200Normal.woff') format('woff'),
-        url('../font//Shtozer-200Normal/Shtozer-200Normal.ttf') format('truetype'),
-        url('../font//Shtozer-200Normal/shtozer-200normal-webfont.svg') format('svg');
+        url('../font/Shtozer-200Normal/Shtozer-200Normal.ttf') format('truetype'),
+        url('../font/Shtozer-200Normal/shtozer-200normal-webfont.svg') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Augusta';
+    src: local('Augusta'),
+         url('../font/Augusta/Augusta.ttf') format('ttf');
     font-weight: 400;
     font-style: normal;
 }
 
 :root{
-    --primary-color: #1b1726;
-    --secondary-color: #1b1726;
-    --tertiary-color:rgb(255,255,255)
+    --primary-color: #1B1727;
+    --secondary-color: #BEAC84;
+    --third-color: #5B5B99;
+}
+
+*{
+    font-family: 'Roboto Serif';
 }
 
 body{
@@ -20,16 +32,18 @@ body{
 }
 
 .titulo{
-    font-family: 'Shtozer 200';
+    font-family: 'Augusta';
+    color: var(--primary-color);
 }
 
 .conteudo{
-    margin-right: 20px;
+    text-indent: 1.5em;
+    margin-right: 10px;
     margin-left: 10px;
-    text-align: center;
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
-    font-size: 1.0rem;
+    text-align: justify;
+    font-family: "Roboto Serif", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
 }
 
 .flexText {
@@ -37,46 +51,53 @@ body{
     flex-direction: column;
 }
 
-.number-page{
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
-    font-family: 'Roboto';
-    font-weight: 600;
-}
-
 .separador{
     height: 20px;
 }
 
 .capa{
-    background-color: var(--primary-color);
-    background-image: url(../img/book/capa.jpg);
+    background-image: url(../img/book/capas/capa.png);
     background-position: center;
     background-repeat: no-repeat;
     height: 600px;
 }
 
 .capa-back{
-    background-color: var(--primary-color);
+    background-image: url(../img/book/capas/capa-5.png);
+    background-position: center;
+    background-repeat: no-repeat;
     height: 600px;
 }
 
 .capa-back-content{
-    margin-left: 2.5rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    background-color: #f0f0e7 !important;
+    background-image: url(../img/book/capas/capa-7.png) !important;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 600px;
+    width: 460px;
+    
 }
 
 .contracapa{
-    background-color: var(--primary-color);
+    background-image: url(../img/book/capas/contra-capa.png);
+    background-position: center;
+    background-repeat: no-repeat;
     height: 600px;
 }
 
 .contracapa-back-content{
-    margin-left: -2.5rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    background-color: #f0f0e7 !important;
+    background-image: url(../img/book/texturas/asfalt-dark.png) !important;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 550px;
+    width: 447px;
+    margin-right: 36px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 /* inicio css sumário */
@@ -91,7 +112,26 @@ body{
 }
 
 .div-sumario {
-    display: flex;
+    /* margin-left: 10px; */
+    border-left: 5px solid var(--primary-color);
+    font-size: 15px;
+    /* display: flex; */
+}
+
+i.fa-chevron-right{
+    color: var(--third-color);
+    filter: drop-shadow(0 0 0.5rem var(--primary-color));
+    transition: transform 0.6s ease-in-out;
+}
+
+i.fa-chevron-right:hover {
+    filter: drop-shadow(0 0 0.3rem var(--primary-color));
+    transform: translateX(+10px);
+}
+
+.div-sumario > :not(:first-child):not(:last-child) {
+    margin-top: 1.5px;
+    margin-bottom: 1.5px;
 }
 
 .descricao-sumario {
@@ -124,7 +164,7 @@ body{
     height: 22px;
     background-color: var(--primary-color);
     text-align: center;
-    color:var(--tertiary-color)
+    color:var(--bs-white)
 }
 
 .text-linha-do-tempo{
@@ -179,3 +219,186 @@ body{
     background-repeat: no-repeat;
     height: 600px;
 }
+
+p.text-capa-back-content{
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--primary-color);
+}
+img.img-capa-back-content{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 83%;
+    margin-bottom: -10px;
+    width: 25%;
+}
+
+img.img-heroi-helvakyr{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    object-position: center;
+    width: 350px;
+    height: 350px;
+    margin-top: 15%;
+}
+
+.default-page{
+    background-image: url(../img/book/texturas/asfalt-dark.png);
+    background-repeat: repeat-y;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 600px;
+    width: 480px;
+}
+
+.first-page{
+    background-image: url(../img/book/capas/capa-7.png);
+    background-repeat: repeat-y;
+    background-position: -448px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 600px;
+    width: 480px;
+}
+
+.povos-page{
+    background-image: url(../img/mundo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 200%;
+    height: 600px;
+}
+
+.default-page-left {
+    background-color: #f0f0e7;
+}
+
+.default-page-right {
+    background-color: #e5e6d8;
+}
+
+.number-page-left{
+    position: absolute;
+    left: 35px;
+    bottom: 30px;
+    font-family: 'Roboto Serif';
+    font-weight: 600;
+}
+
+.number-page-right{
+    position: absolute;
+    right: 35px;
+    bottom: 30px;
+    font-family: 'Roboto Serif';
+    font-weight: 600;
+}
+
+.default-page-content {
+    height: 550px;
+    width:  420px;
+    margin-top: 25px;
+    margin-left: 30px;
+    /* border: 1px solid var(--primary-color); */
+}
+
+.povos-page-content {
+    background-color: white;
+    opacity: 0.4;
+    clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+    width: 280px;
+    height: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 33%;
+}
+
+.b-page-3,
+.b-page-5,
+.b-page-7,
+.b-page-9,
+.b-page-11,
+.b-page-13,
+.b-page-15,
+.b-page-17,
+.b-page-19,
+.b-page-21,
+.b-page-23,
+.b-page-25,
+.b-page-27{
+    -webkit-box-shadow: -4px 0px 25px -1px hsl(0deg 0% 3% / 17%) !important;
+}
+
+.intro{
+    margin-top: 50%;
+    font-family: 'Roboto Serif';
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.intro p{
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.intro a{
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.btn-custom-color{
+    background-color: var(--third-color);
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* animacao-logo */
+.animacao-logo {
+    position: relative;
+    left: 88px;
+    position: relative;
+    top: 113px;
+}
+
+.img1-animacao {
+    position: absolute;
+    left: 35px;
+    top: 35px;
+    animation: loading 10s linear infinite;
+}
+
+.img3-animacao {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+}
+
+.img2-animacao {
+    animation: loading-revert 10s linear infinite;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+@keyframes loading-revert {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/* fim animação logo */

@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Margord - Mitologias Universais - 2022.2</title>
 
-    <!-- fontes Roboto -->
+    <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css"/>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/sharp-solid.css"/>
 
     <!-- Boostrap css-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -18,180 +22,597 @@
   
     <!-- Custom css-->
     <link type='text/css' rel='stylesheet' href='css/main.css' />
+    <link type='text/css' rel='stylesheet' href='css/timeline.css' />
+
   </head>
   <body>
 
     <main>
         <section class="px-4 py-2 my-1">
+            <div class="row">
+            <div class="col-9 md-12">
             <div id="margord-book">
                 <!-- Capa  -->
-                <div class="row capa"></div>
+                <div class="row capa">
+                    <div class="animacao-logo">
+                        <img src="./img/parte2.png" class="img2-animacao">
+                            <img src="./img/parte3.png" class="img3-animacao">
+                            </img>
+                            <img src="./img/parte1.png" class ="img1-animacao">
+                            </img>
+                        </img>
+                    </div>
+                </div>
                 <div class="row capa-back">
                     <div class="container text-bg-light capa-back-content">
-                        
+                        <!-- <img class="img-capa-back-content" src="img/simbolos/logo-preto.png"/>
+                        <p class="text-center text-capa-back-content">O mundo de Margord<br>Mitologias Universais 2022.2</p> -->
                     </div>
                 </div>
 
-                <!-- Prefácio / Resumo -->
-                <div class = "flexText">
-                    <div class="container text-center">
-                        <h1 class="titulo">Prefácio/Resumo</h1>
-                    </div>
-                    <div class="separador"></div>
-                    <div class="conteudo">
-                        "Você já deve ter ouvido falar das novas que o vento trouxe d’além dos
-                        limites do mundo e do firmamento... suas palavras transcorrem nas veias
-                         desta terra, e todos estão atados ao seu destino, desde cá para além das 
-                         terras do norte, onde as estrelas caíram e a ordem foi fragmentada."
-                    </div>
-                    <div class="separador"></div>
-                    <div class="separador"></div>
-                    <div class="separador"></div>
-                    <div class="conteudo">
-                        "Pois os lordes destas terras que outrora viveram em harmonia se encontrarão 
-                        envenenados em seus corações, e belos campos se tornarão em lagos de chamas, 
-                        aço e sangue, e os poderes do mundo perderão seu equilíbrio. Então eles chegarão,
-                        estranhos de estranhos nomes, vindos de estranhas terras."
-                    </div>
-                    <div class="number-page">1</div>
-                </div>
-                <!-- Sumário -->
-                <div>
-                    <div class="container text-center">
-                        <h1 class="titulo">Sumário</h1>
-                    </div>
-                    <div class="div-sumario">
-                        <div class="coluna-sumario"></div>
-                        <div class="descricao-sumario">
-                            <ul>
-                                <li><span>5-</span> Linha do Tempo</li>
-                                <li><span>10-</span> Mapa</li>
-                                <li><span>15-</span> Paisagem</li>
-                                <li><span>20-</span> Mundos</li>
-                                <li><span>25-</span> Povos do Norte</li>
-                                <li><span>30-</span> Povos Centrais</li>
-                                <li><span>35-</span> Povos do Sul</li>
-                                <li><span>40-</span> Helväkyr, A última dos Iceptianos</li>
-                                <li><span>45-</span> Lorde Sylvian</li>
-                                <li><span>50-</span> Mundo 2022.1 Yordgarten</li>
-                                <li><span>55-</span> Kyla, Princesa dos Kherr.</li>
-                                <li><span>60-</span> Lorde sem Nome </li>
-                            </ul>
+                <!-- Prefácio -->
+                <div class="row first-page default-page-right">
+                    <div class="default-page-content">
+                        <!-- <div class="container text-center">
+                            <h1 class="titulo">Prefácio</h1>
                         </div>
+                        <div class="separador"></div>
+                        <div class="conteudo">
+                            Você já deve ter ouvido falar das novas que o vento trouxe d’além dos
+                            limites do mundo e do firmamento... Suas palavras transcorrem nas veias
+                            desta terra, e todos estão atados ao seu destino, desde cá para além das 
+                            terras do norte, onde as estrelas caíram e a ordem foi fragmentada.
+                        </div>
+                        <div class="separador"></div>
+                        <div class="separador"></div>
+                        <div class="conteudo">
+                            Pois os lordes destas terras que outrora viveram em harmonia se encontrarão 
+                            envenenados em seus corações, e belos campos se tornarão em lagos de chamas, 
+                            aço e sangue, e os poderes do mundo perderão seu equilíbrio. Então eles chegarão,
+                            estranhos de estranhos nomes, vindos de estranhas terras.
+                        </div>
+                        <div class="number-page-right">1</div> -->
                     </div>
-                    <div class="number-page">3</div>
+                </div>
+
+                <!-- Sumário -->
+                <div class="row default-page default-page-left">
+                    <div class="default-page-content">
+                        <div class="container text-center">
+                            <h1 class="titulo">Sumário</h1>
+                        </div>
+                        <div class="container text-nowrap div-sumario">
+                            <div class="row">
+                                <div class="col-11 overflow-hidden">1. Linha do tempo ..........................................................................</div>
+                                <!-- <div class="col-1">2</div> -->
+                                <div class="col-1">
+                                    <a id="pg-1" href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-11 overflow-hidden">2. Mapa ....................................................................................</div>
+                                <!-- <div class="col-1">3</div> -->
+                                <div class="col-1">
+                                    <a id="pg-2" href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-11 overflow-hidden">3. Povos ....................................................................................</div>
+                                <!-- <div class="col-1">5</div> -->
+                                <div class="col-1">
+                                    <a id="pg-3" href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-11 overflow-hidden">3.1. Povos do Norte ....................................................................................</div>
+                                <!-- <div class="col-1">6</div> -->
+                                <div class="col-1">
+                                    <a id="pg-4" href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-11 overflow-hidden">3.2. Povos das Terras Centrais ....................................................................................</div>
+                                <!-- <div class="col-1">8</div> -->
+                                <div class="col-1">
+                                    <a id="pg-5" href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-11 overflow-hidden">3.3. Povos do Sul ....................................................................................</div>
+                                <!-- <div class="col-1">10</div> -->
+                                <div class="col-1">
+                                    <a id="pg-6" href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-11 overflow-hidden">4. Heróis ....................................................................................</div>
+                                <!-- <div class="col-1">12</div> -->
+                                <div class="col-1">
+                                    <a id="pg-7" href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-11 overflow-hidden">4.1. Helväkyr ....................................................................................</div>
+                                <!-- <div class="col-1">13</div> -->
+                                <div class="col-1">
+                                    <a id="pg-8" href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-11 overflow-hidden">4.2. Sylvian ....................................................................................</div>
+                                <!-- <div class="col-1">17</div> -->
+                                <div class="col-1">
+                                    <a id="pg-9" href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-11 overflow-hidden">4.3. Kyla ....................................................................................</div>
+                                <!-- <div class="col-1">19</div> -->
+                                <div class="col-1">
+                                    <a id="pg-10" href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-11 overflow-hidden">4.4. Sem Nome ....................................................................................</div>
+                                <!-- <div class="col-1">21</div> -->
+                                <div class="col-1">
+                                    <a id="pg-11" href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-11 overflow-hidden">5. Referências ....................................................................................</div>
+                                <!-- <div class="col-1">24</div> -->
+                                <div class="col-1">
+                                    <a id="pg-12" href="#"><i class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                            <!-- <div class="coluna-sumario"></div>
+                            <div class="descricao-sumario">
+                                <ul>
+                                    <li><span>5-</span> Linha do Tempo</li>
+                                    <li><span>10-</span> Mapa</li>
+                                    <li><span>15-</span> Paisagem</li>
+                                    <li><span>20-</span> Mundos</li>
+                                    <li><span>25-</span> Povos do Norte</li>
+                                    <li><span>30-</span> Povos Centrais</li>
+                                    <li><span>35-</span> Povos do Sul</li>
+                                    <li><span>40-</span> Helväkyr, A última dos Iceptianos</li>
+                                    <li><span>45-</span> Lorde Sylvian</li>
+                                    <li><span>50-</span> Mundo 2022.1 Yordgarten</li>
+                                    <li><span>55-</span> Kyla, Princesa dos Kherr.</li>
+                                    <li><span>60-</span> Lorde sem Nome </li>
+                                </ul>
+                            </div> -->
+                        <div class="number-page-left">1</div>
+                    </div>
                 </div>
 
                 <!-- Linha do Tempo -->
-                <div>
+                <div class="row default-page default-page-right">
+                    <div class="default-page-content">
                     <div class="container text-center">
                         <h1 class="titulo">Linha do Tempo</h1>
                     </div>
-                    <div class="haste-linha-do-tempo">
+                    <div class="container row" style="margin-top: -30px;">
+                        <ul class="timeline">
+                            <!-- Item 1 -->
+                            <li style="margin-top: 30px;">
+                              <div class="direction-r">
+                                <div class="flag-wrapper">
+                                  <span class="hexa"></span>
+                                  <span class="flag">1000 A.C</span>
+                                </div>
+                                <div class="desc">Todos os povos iam bem, desenvolvendo 
+                                    suas atividades, alguns provocavam guerras,
+                                    destruições, mas outros levavam uma vida pacata,
+                                    até que um acontecimento estranho modificou
+                                    totalmente a vida desse mundos.</div>
+                              </div>
+                            </li>
+                          
+                            <!-- Item 2 -->
+                            <li style="margin-top: -50px;">
+                              <div class="direction-l">
+                                <div class="flag-wrapper">
+                                  <span class="hexa"></span>
+                                  <span class="flag">500 A.C</span>
+                                </div>
+                                <div class="desc">Povos Mágicos abrem portais dimensionais para cada
+                                    um dos mundos, gerando um colapso na zona cósmica,
+                                    destruindo todo o universo em torno deste portal. Porém
+                                    alguns povos foram sugados para dentro do portal
+                                    sendo salvos.</div>
+                              </div>
+                            </li>
+                          
+                            <!-- Item 3 -->
+                            <li style="margin-top: -50px;">
+                              <div class="direction-r">
+                                <div class="flag-wrapper">
+                                  <span class="hexa"></span>
+                                  <span class="flag">459 A.C</span>
+                                </div>
+                                <div class="desc">Esses heróis sugados para dentro do portal inicam
+                                    uma nova jornada em busca de saber o que aconteceu
+                                    juntos.</div>
+                              </div>
+                            </li>
+                          </ul>
                     </div>
-                    <div class="linha-do-tempo">
-                        <div class="title-haste-linha-do-tempo" style="width: 180px;">
-                            1000 A.C
-                        </div>
-                        <div class="text-linha-do-tempo">
-                            Todos os povos iam bem, desenvolvendo 
-                            suas atividades, alguns provocavam guerras,
-                            destruições, mas outros levavam uma vida pacata,
-                            até que um acontecimento estranho modiificou
-                            totalmente a vida desse mundos.
-                        </div>
+                    <div class="number-page-right">2</div>
                     </div>
-                    <div class="linha-do-tempo">
-                        <div class="title-haste-linha-do-tempo" style="width: 300px;">
-                            500 A.C
-                        </div>
-                        <div class="text-linha-do-tempo">
-                            Povos Mágicos abrem portais dimensionais para cada
-                            um dos mundos, gerando um colapso na zona cósmica,
-                            destruindo todo o universo em torno deste portal. Porém
-                            alguns povos foram sugados para dentro do portal
-                            sendo salvos.
-                        </div>
-                    </div>
-                    <div class="linha-do-tempo">
-                        <div class="title-haste-linha-do-tempo" style="width: 400px;">
-                            459 A.C
-                        </div>
-                        <div class="text-linha-do-tempo">
-                            Esses heróis sugados para dentro do portal inicam
-                            uma nova jornada em busca de saber o que aconteceu
-                            juntos.
-                        </div>
-                    </div>
-                    <div class="number-page">4</div>
                 </div>
+
                 <!-- Mapa -->
-                <div class="mapa-background">
+                <div class="row default-page default-page-left">
                     <div class="container text-center">
-                        <h1 class="titulo">Mapa - Retrato</h1>
+                        <h1 class="titulo" style="margin-right: 130px;font-size: 30px;margin-top: 10px;">Mapa</h1>
                     </div>
-                    <div class="number-page">10</div>
+                    <div>
+                        <img src="./img/mapa/mapa-2.png" style="position: absolute;margin-top: -54px;">
+                        <div class="number-page-left">3</div>
+                    </div>
                 </div>
-                <div class="mundo-background">
-                    <div class="container text-center">
-                        <h1 class="titulo">Mapa - Paisagem</h1>
+                <div class="row default-page default-page-right">
+                    <div>
+                        <img src="./img/mapa/mapa-2.png" style="object-position: -460px;">
+                        <div class="number-page-right">4</div>
                     </div>
-                    <div class="number-page">15</div>
-                </div>
-
-                <!-- Roteiro -->
-                <div>
-                    <div class="container text-center">
-                        <h1 class="titulo">Roteiro</h1>
-                    </div>
-                    <div class="number-page">20</div>
                 </div>
 
                 <!-- Povos -->
-                <div>
-                    <div class="container text-center">
-                        <h1 class="titulo">Homens do Norte</h1>
+                <div class="row povos-page default-page-left">
+                    <div class="povos-page-content">
+                        <div class="container text-center">
+                            <h1 class="titulo" style="font-size: 80px;margin-top: 40%;">Povos</h1>
+                        </div>
+                        <div class="number-page-left">5</div>
                     </div>
-                    <div class="conteudo">
-                        Os Homens do norte viviam para além das cordilheiras montanhosas onde havia campos
-                        e vales até toda a terra repousar em uma planície desértica, para além delas,
-                        se encontravam mais cadeias montanhosas imponentes e vermelhas que se chocavam 
-                        com um mar revolto, dessas montanhas, nos confins do mundo viviam em plenitude os 
-                        acadêmicos e sábios de Rôh-uin(Rôh: Saber/ Uin - Povo) ostentavam em suas grandes
-                        bibliotecas conhecimentos que remontavam há milênios de história.
-                    </div>
-                    <div class="number-page">25</div>
                 </div>
 
-                <!-- Povos -->
-                <div>
-                    <div class="container text-center">
-                        <h1 class="titulo">Os povos centrais</h1>
+                <div class="row default-page default-page-right">
+                    <div class="default-page-content">
+                        <div class="container text-center">
+                            <h1 class="titulo">Povos do Norte</h1>
+                        </div>
+                        <div class="conteudo">
+                            Os Homens do norte viviam para além das cordilheiras montanhosas onde havia 
+                            campos e vales até toda a terra repousar em uma planície desértica, para além 
+                            delas, se encontravam mais cadeias montanhosas imponentes e vermelhas que se 
+                            chocavam com um mar revolto, dessas montanhas, nos confins do mundo viviam em 
+                            plenitude os acadêmicos e sábios de Rôh-uin(Rôh: Saber/ Uin - Povo) ostentavam 
+                            em suas grandes bibliotecas conhecimentos que remontavam há milênios de história. 
+                            Estes eram chamados de Andrôhi (And: Aqueles / Rôh: Saber / i: Desinência Nominal (Plural)).
+                        </div>
+                        <div class="separador"></div>
+                        <div class="conteudo">
+                            Haruini é como eram chamados o povos da terra, outrora magníficos em sua arte e engenho, seus 
+                            palácios se dispunham abaixo da terra com sistemas de refrigeração por tubos de vento, grandes 
+                            colunas se erguiam adornadas com as faces de suas deusas, acima do solo um grande santuário aberto 
+                            se erguia com 4 estátuas solitárias e imponentes cada uma segurando uma concha que quando o vento soprava,
+                        </div>
+                        <div class="number-page-right">6</div>
                     </div>
-                    <div class="conteudo">
-                        Outrora uma terra de campos verdejantes e florestas abundantes, abrigavam os reinos de Itassea (Reino sobre o mar) ao oeste, Orothion (Rocha da montanha), Geate-It (Reino da Floresta) ao leste e por fim o Reino transiente das muralhas do sul (Itdain Tuiron), cada reino ostentava uma bandeira de determinada cor, com um símbolo de seu reino. 
-                        Para Itassea, um azul como o do céu, quando ainda era visto, seu símbolo era um círculo branco com a silhueta de um barco vazado em dourado, que demonstrava seu poder sobre o mar e a lua que nascia em grande tamanho nas suas costas e iluminava sua cidade de pedras brancas.
-                        Para Orothion um vermelho carmesim tingia seus tecidos, seu símbolo era de um grande fogo, cujo no centro vazava a forma de uma grande marreta, suas forjas eram suas assinaturas, pois grandes minhas obtinham, e seus exércitos eram vastos e equipados.
-                    </div>
-                    <div class="number-page">30</div>
                 </div>
 
-                <div>
-                    <div class="container text-center">
-                        <h1 class="titulo">Os povos do Sul</h1>
+                <div class="row default-page default-page-left">
+                    <div class="default-page-content">
+                        <!-- <div class="container text-center">
+                            <h1 class="titulo">Povos do Norte</h1>
+                        </div> -->
+                        <div class="conteudo" style="text-indent: 0;">
+                            dependendo da direção deste, uma ou duas conchas soavam um som que ecoava por aquele deserto, 
+                            quando chovia, o sistema de drenagem levava a água para o segundo nível do subterrâneo, onde 
+                            ela se juntava em uma grande saída que jorrava como uma cachoeira em um lago, a luz que entrava 
+                            em buracos retangulares no topo da caverna em certa parte do dia iluminava 2 deusas que ficavam 
+                            uma em cada lado da cachoeira, uma olhando pra cima com seu braço direito levantado com uma 
+                            estrela em sua testa, e uma que olhava para baixo com seu braço esticado ao lago.
+                        </div>
+                        <div class="separador"></div>
+                        <div class="conteudo">
+                            Toda essa beleza foi perdida na abertura dos portais, agora apenas ruínas são suspensas no ar num lugar 
+                            onde o tempo não parece passar e os corpos sem vida parecem não se decompor. Antigos monumentos 
+                            ainda em pé são encontrados no por entre as cordilheiras como saudação para os povos que 
+                            transitam nessas terras.
+                        </div>
+                        <div class="number-page-left">7</div>
                     </div>
-                    <div class="conteudo">
-                        Os povos do sul viviam de comércio e colheita, dando idas e vindas pelo continente, 
-                        vendendo especiarias e produtos de seus gados, a guerra lá até então não chegou, 
-                        no entanto atividades piratas se tornaram mais frequentes, fugas dos povos do norte 
-                        aplacaram as comunidades, e os jovens eram coagidos a entrar no exército de Itdain
-                        Tuiron, que reclamava para si todas aquelas terras, Homens e Sábios errantes poderiam 
-                        ser encontrados por lá e estábulos se enchiam mais com homens do que cavalos,
-                        no entanto, o céu ainda era visível, os campos ainda floridos, e o inverno ainda 
-                        estava longe.
-                    </div>
-                    <div class="number-page">35</div>
                 </div>
+
+                <div class="row default-page default-page-right">
+                    <div class="default-page-content">
+                        <div class="container text-center">
+                            <h1 class="titulo" style="font-size: 34px;">Povos das Terras Centrais</h1>
+                        </div>
+                        <div class="conteudo">
+                            Outrora uma terra de campos verdejantes e florestas abundantes, abrigavam os reinos de Itassea 
+                            (Reino sobre o mar) ao oeste, Orothion (Rocha da montanha), Geate-It (Reino da Floresta) ao leste 
+                            e por fim o Reino transiente das muralhas do sul (Itdain Tuiron), cada reino ostentava uma bandeira 
+                            de determinada cor, com um símbolo de seu reino.
+                        </div>
+                        <div class="separador"></div>
+                        <div class="conteudo">
+                            Para Itassea, um azul como o do céu, quando ainda era visto, seu símbolo era um círculo branco com a 
+                            silhueta de um barco vazado em dourado, que demonstrava seu poder sobre o mar e a lua que nascia em 
+                            grande tamanho nas suas costas e iluminava sua cidade de pedras brancas.
+                        </div>
+                        <div class="separador"></div>
+                        <div class="conteudo">
+                            Para Orothion um vermelho carmesim tingia seus tecidos, seu símbolo era de um grande fogo, cujo no centro 
+                            vazava a forma de uma grande marreta, suas forjas eram suas assinaturas, pois grandes minhas obtinham, 
+                            e seus exércitos eram vastos e equipados.
+                        </div>
+                        <div class="separador"></div>
+                        <div class="conteudo">
+                            Para Geate-It adotaram um tom verde profundo,
+                        </div>
+                        <div class="number-page-right">8</div>
+                    </div>
+                </div>
+
+                <div class="row default-page default-page-left">
+                    <div class="default-page-content">
+                        <!-- <div class="container text-center">
+                            <h1 class="titulo" style="font-size: 34px;">Povos das Terras Centrais</h1>
+                        </div> -->
+                        <div class="conteudo" style="text-indent: 0;">
+                            e uma grande árvore dourada era estampada em seu centro, exaltando a beleza de suas vastas florestas.
+                        </div>
+                        <div class="separador"></div>
+                        <div class="conteudo">
+                            Para Itdain Tuiron cor preta com seus detalhes prateados, no meio de seu estandarte, uma cabeça de 
+                            cavaleiro, por ficar entre o sul e o norte, seu povo era a que mais transitava, e seus cavalos, eram 
+                            os mais velozes.
+                        </div>
+                        <div class="separador"></div>
+                        <div class="conteudo">
+                            Atualmente, todos os estandartes eram vistos juntos no mesmo campo, mas o que uma vez fora para 
+                            festivais e reunião dos povos, agora fora campos de batalha, pilhas de corpos, lama, lâminas 
+                            quebradas e sangue.
+                        </div>
+                        <div class="separador"></div>
+                        <div class="conteudo">
+                            Porque a desconfiança aplacou o coração dos lordes, e a soberba cresceu dentro de cada um, e estas 
+                            não eram mais terras seguras, mas sim, terras de desolação, prantos e escuridão, pois com o avanço 
+                            da magia, tudo o que os lordes almejam foi o poder.
+                        </div>
+                        <div class="number-page-left">9</div>
+                    </div>
+                </div>
+
+                <div class="row default-page default-page-right">
+                    <div class="default-page-content">
+                        <div class="container text-center">
+                            <h1 class="titulo">Povos do Sul</h1>
+                        </div>
+                        <div class="conteudo">
+                            Os povos do sul viviam de comércio e colheita, dando idas e vindas pelo continente, vendendo especiarias 
+                            e produtos de seus gados, a guerra lá até então não chegou, no entanto atividades piratas se tornaram mais 
+                            frequentes, fugas dos povos do norte aplacaram as comunidades, e os jovens eram coagidos a entrar no 
+                            exército de Itdain Tuiron, que reclamava para si todas aquelas terras, Homens e Sábios errantes poderiam 
+                            ser encontrados por lá e estábulos se enchiam mais com homens do que cavalos, no entanto, o céu ainda era 
+                            visível, os campos ainda floridos, e o inverno ainda estava longe.
+                        </div>
+                        <div class="number-page-right">10</div>
+                    </div>
+                </div>
+
+                <!-- Herois -->
+                <div class="row default-page default-page-left">
+                    <div class="default-page-content">
+                        <div class="container text-center">
+                        </div>
+                        <div class="number-page-left">11</div>
+                    </div>
+                </div>
+                <div class="row povos-page default-page-right">
+                    <div class="povos-page-content">
+                        <div class="container text-center">
+                            <h1 class="titulo" style="font-size: 80px;margin-top: 40%;">Heróis</h1>
+                        </div>
+                        <div class="number-page-right">12</div>
+                    </div>
+                </div>
+
+                <div class="row default-page default-page-left">
+                    <div class="default-page-content">
+                        <div class="container text-center">
+                            <img src="./img/herois/helvakyr.png" class="img-heroi-helvakyr">
+                            <h1 class="titulo" style="font-size: 4.5rem;">Helväkyr</h1>
+                        </div>
+                        <div class="number-page-left">13</div>
+                    </div>
+                </div>
+
+                <div class="row default-page default-page-right">
+                    <div class="default-page-content">
+                        <div class="container text-center" style="margin-top: -10px;">
+                            <h1 class="titulo">Helväkyr</h1>
+                            <p class="titulo" style="font-size: 20px;margin-top: -15px;">A última dos Iceptianos</p>
+                            <p class="titulo" style="font-size: 20px;margin-top: -25px;">Mundo 2021.1</p>
+                        </div>
+                        <div class="conteudo" style="margin-top: -10px;">
+                            Descendente de Volishe, Helväkyr nasceu sem respirar, seus pais em desespero rogaram à Orniav que
+                             a devolvesse, então a mergulharam no mar gélido, fizeram uma prece, Orniav estava presente na água, 
+                             assim como na terra e nas demais coisas que ele fez surgir, então a garotinha voltou a vida, mas 
+                             seus olhos eram brancos, e sua pele gelada, e quando chegou aos 20 e poucos, chegou a sua aparência 
+                             final, pois não importa quanto tempo passasse, sua aparência e vitalidade permaneciam,no entanto 
+                             não era imortal, pois se feria como uma pessoa qualquer. Quando o degelo chegou e a semente 
+                             desabrochou, “Aquilo” voltou, e acabou com todos os iceptianos, Helväkyr lutou ferozmente e por 
+                             pouco não saiu sem vida, Aquilo foi novamente destruído, ao menos é o que diziam sobre ela, já 
+                             que ela nunca falava de seu passado, porém o fato de não envelhecer e vagar em terras ermas com 
+                             suas pinturas corporais brancas eram totalmente verdades.
+                        </div>
+                        <div class="number-page-right">14</div>
+                    </div>
+                </div>
+
+                <div class="row default-page default-page-left">
+                    <div class="default-page-content">
+                        <div class="conteudo">
+                            Coberta por uma capa de urso polar, Helväkyr andava como uma errante pelo mundo, até que encontrou no 
+                            topo de um precipício um tipo de fragmento de pedra que flutuava sobre o vazio profundo cujas águas 
+                            que ecoavam lá em baixo desaguavam no litoral, tentada a pegar aquela estranha pedra, encostou nela, 
+                            então foi engolida por uma escuridão mais negra que a própria noite, pouco tempo depois a escuridão 
+                            tomou forma, e ao cair dela se deparou com campos verdes, não estava mais no mesmo lugar, sequer no 
+                            próprio planeta. Pois após ela ser capturada, toda aquela terra foi destruída e arrasada, mas 
+                            fragmentos dela pairam ao norte dessa nova terra, onde o colapso surgiu.
+                        </div>
+                        <div class="separador"></div>
+                        <div class="conteudo">
+                            Toda essa beleza foi perdida na abertura dos portais, agora apenas ruínas são suspensas no ar num lugar 
+                            onde o tempo não parece passar e os corpos sem vida parecem não se decompor. Antigos monumentos 
+                            ainda em pé são encontrados no por entre as cordilheiras como saudação para os povos que 
+                            transitam nessas terras.
+                        </div>
+                        <div class="separador"></div>
+                        <div class="conteudo">
+                            Helväkyr é uma mulher de feições joviais, e
+                        </div>
+                        <div class="number-page-left">15</div>
+                    </div>
+                </div>
+
+                <div class="row default-page default-page-right">
+                    <div class="default-page-content">
+                        <div class="conteudo" style="text-indent: 0;">
+                            olhares cansados, pois já viu muito.
+                        </div>
+                        <div class="separador"></div>
+                        <div class="conteudo">
+                            Sua pele é escura, suas cicatrizes cobertas por tinta branca, seu cabelo e olhos são brancos, e nos 
+                            lábios ela o pinta da mesma forma, usa uma capa de pele de urso polar, anda sempre com um arco e 
+                            uma aljava com flechas que ela mesma produz. Anda descalça pois muitos anos nas terras ermas a 
+                            acostumou assim, é tão acostumada que mesmo entre pedras pontudas não se fere, e nas gramas não 
+                            faz barulho a não ser que o queira assim.
+                        </div>
+                        <div class="separador"></div>
+                        <div class="separador"></div>
+                        <img src="./img/herois/helvakyr-2.jpg" style="width:50%;margin-left:auto;margin-right:auto;display:block"/>
+                        <div class="number-page-right">16</div>
+                    </div>
+                </div>
+
+                <div class="row default-page default-page-left">
+                    <div class="default-page-content">
+                        <div class="container text-center">
+                            <img src="./img/herois/sylvian.png" class="img-heroi-helvakyr">
+                            <h1 class="titulo" style="font-size: 4.5rem;">Sylvian</h1>
+                        </div>
+                        <div class="number-page-left">17</div>
+                    </div>
+                </div>
+
+                <div class="row default-page default-page-right">
+                    <div class="default-page-content">
+                        <div class="container text-center" style="margin-top: -10px;">
+                            <h1 class="titulo">Sylvian</h1>
+                            <p class="titulo" style="font-size: 20px;margin-top: -15px;">Lorde Sylvian</p>
+                            <p class="titulo" style="font-size: 20px;margin-top: -25px;">Mundo 2020.2</p>
+                        </div>
+                        <div class="conteudo" style="margin-top: -10px;">
+                            Após ser liberto de Droknut-Reverso, Sylvian voltou a si, e após a partida de Droknut e sua Família, 
+                            ele buscou redenção na esperança da recuperação dos homens, alguns anos depois Sylvian já tinha 
+                            constituído uma família, e vivia como um andarilho, em uma de suas expedições encontrou um estranho 
+                            artefato acima de uma colina, quando se aproximou viu ser uma estranha pedra, opaca, estava suspensa 
+                            no ar, como se aguardasse algo. Sylvian tocou a pedra.
+                        </div>
+                        <div class="separador"></div>
+                        <div class="conteudo">
+                            Sua aparencia era de um homem de 1,85, forte, negro, seus cabelos castanho-escuros, seus olhos quase 
+                            pretos, suas vestes lembraram uma aparencia parte tribal, parte samurai e parte armadura de placa.
+                        </div>
+                        <div class="number-page-right">18</div>
+                    </div>
+                </div>
+
+                <div class="row default-page default-page-left">
+                    <div class="default-page-content">
+                        <div class="container text-center">
+                            <img src="./img/herois/kyla.png" class="img-heroi-helvakyr">
+                            <h1 class="titulo" style="font-size: 4.5rem;">Kyla</h1>
+                        </div>
+                        <div class="number-page-left">19</div>
+                    </div>
+                </div>
+
+                <div class="row default-page default-page-right">
+                    <div class="default-page-content">
+                        <div class="container text-center"  style="margin-top: -10px;">
+                            <h1 class="titulo">Kyla</h1>
+                            <p class="titulo" style="font-size: 20px;margin-top: -15px;">Princesa dos Kherr</p>
+                            <p class="titulo" style="font-size: 20px;margin-top: -25px;">Mundo MU</p>
+                        </div>
+                        <div class="conteudo"  style="margin-top: -10px;">
+                            Apesar do seu título, a princesa era mais uma cidadã comum do que uma monarca de fato, engenhosa e de 
+                            gênio forte ela teimava contra as regras da monarquia. Ignorava seus ofícios para ficar nas forjas e 
+                            oficinas criando equipamentos e desenhando esquemas, apesar de seus adereços reais, estes sempre eram 
+                            acompanhados de roupa suja de graxa e fuligem. Um dia, ao entrar na oficina, fugindo novamente de 
+                            seus deveres, viu um fragmento de pedra surgir em sua frente, fascinada pelo objeto, ela tocou ele.
+                        </div>
+                        <div class="separador"></div>
+                        <div class="conteudo">
+                            Pele escura, Calça branca, Sapato Marrom, Camisa Creme um pouco suja, um cinto pendia em sua cintura 
+                            com várias ferramentas que usava na oficina, nos seus pulsos braceletes dourados, um colar de ouro 
+                            e prata em volta do pescoço e um - em sua fronte.
+                        </div>
+                        <div class="number-page-right">20</div>
+                    </div>
+                </div>
+
+                <!-- <div class="row default-page default-page-right">
+                    <div class="default-page-content">
+                        <img src="./img/herois/kyla-2.png" style="width: 95%;"/>
+                        <div class="number-page-right">21</div>
+                    </div>
+                </div> -->
+
+                <div class="row default-page default-page-left">
+                    <div class="default-page-content">
+                        <div class="container text-center">
+                            <img src="./img/herois/sem-nome.png" class="img-heroi-helvakyr">
+                            <h1 class="titulo" style="font-size: 4.5rem;">Sem Nome</h1>
+                        </div>
+                        <div class="number-page-left">21</div>
+                    </div>
+                </div>
+
+                <div class="row default-page default-page-right">
+                    <div class="default-page-content">
+                        <div class="container text-center"  style="margin-top: -10px;">
+                            <h1 class="titulo">Lorde Sem Nome</h1>
+                            <p class="titulo" style="font-size: 20px;margin-top: -15px;">Detentor do Sangue de Kaath</p>
+                            <p class="titulo" style="font-size: 20px;margin-top: -25px;">Mundo 2022.1 Yordgarten</p>
+                        </div>
+                        <div class="conteudo"  style="margin-top: -10px;">
+                            Um Lorde bastardo de tamanho incomum para ser homem ou gigante, expulso de suas terras, indigno de ter 
+                            nome e de até mesmo estar escrito na história, foi um refugiado. Após o cataclisma, acordou de um sono 
+                            profundo em seus domínios intocados, em exílio, achou que o melhor era simplesmente perecer alí, mas 
+                            seus olhos, há muito na escuridão de suas ruínas, viu surgir ali um pequeno fragmento de pedra, 
+                            enquanto os ventos quentes de um enorme brilho chegavam e arrastava partes da ruína sem qualquer 
+                            esforço, o Lorde estendeu sua magra e pálida mão, e segurou esta pedra.
+                        </div>
+                        <div class="separador"></div>
+                        <div class="conteudo">
+                            Esse lorde tem seus cabelos longos e brancos, e suas vestes são pretas, e o vermelho em seu interior já 
+                            perdeu a intensidade da cor, e se encontra em um tom morto. suas unhas compridas, sua face pálida coberta 
+                            por uma máscara negra como a fronte do capacete, suas feições são magras e até andrógenas,
+                        </div>
+                        <div class="number-page-right">22</div>
+                    </div>
+                </div>
+
+                <div class="row default-page default-page-left">
+                    <div class="default-page-content">
+                        <div class="conteudo">
+                            assim como sua voz, ele impressiona com seus 2,5 metros nessa posição, usa um cajado de madeira como 
+                            catalisador para usar suas magias de sangue.
+                        </div>
+                        <div class="number-page-left">23</div>
+                    </div>
+                </div>
+<!-- 
                 <div>
                     <div class="container text-center">
                         <h1 class="titulo">Helväkyr, A última dos Iceptianos</h1>
@@ -286,14 +707,29 @@
                     <div class="number-page">55</div>
                 </div>
                 <div class="ilustracao-lorde-sem-nome">
-                </div>
+                </div> -->
                 <!-- Contra -->
                 <div class="row contracapa">
                     <div class="container text-bg-light contracapa-back-content">
+                        <img class="img-capa-back-content" src="img/simbolos/logo-preto.png"/>
+                        <p class="text-center text-capa-back-content">O mundo de Margord<br>Mitologias Universais 2022.2<br>Professor Levi Bayde</p>
                     </div>
                 </div>
                 <div class="row contracapa"></div>
+                </div>
             </div>
+            <div class="col-3 md-12">
+                <div class="text-center mx-auto intro">
+                    Livro Digital <br>
+                    Mitologias Universais 2022.2
+                    <p>Utilize as setas abaixo ou as setas do teclado para navegar pelo livro.</p>
+                    <button id="prev_book" type="button" class="btn btn-custom-color"><i class="fa-solid fa-arrow-left"></i></button>
+                    <button id="next_book" type="button" class="btn btn-custom-color"><i class="fa-solid fa-arrow-right"></i></button><br>
+                    <button id="pg-0" type="button" class="btn btn-custom-color"><i class="fa-regular fa-book-bookmark"></i> Sumário</button><br>
+                    <a href="https://github.com/nicoleinasous/mu-2022-2" target=_blank>Github & Colaboradores</a>
+                </div>
+            </div>
+        </div>
         </section>
     </main>
 
