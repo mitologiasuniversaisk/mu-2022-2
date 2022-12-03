@@ -333,7 +333,8 @@ img.img-heroi-helvakyr{
 }
 
 .intro{
-    margin-top: 50%;
+    margin-top: 1%;
+    margin-bottom: 1%;
     font-family: 'Roboto Serif';
     font-weight: 600;
     font-size: 30px;
