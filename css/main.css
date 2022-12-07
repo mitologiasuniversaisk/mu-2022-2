@@ -89,7 +89,7 @@ body{
 
 .contracapa-back-content{
     background-color: #f0f0e7 !important;
-    background-image: url(../img/book/texturas/asfalt-dark.png) !important;
+    background-image: url(../img/book/texturas/vintage-grunge-paper-4.png) !important;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -113,7 +113,7 @@ body{
 
 .div-sumario {
     /* margin-left: 10px; */
-    border-left: 5px solid var(--primary-color);
+    border-left: 5px solid #b7a682;
     font-size: 15px;
     /* display: flex; */
 }
@@ -245,7 +245,8 @@ img.img-heroi-helvakyr{
 }
 
 .default-page{
-    background-image: url(../img/book/texturas/asfalt-dark.png);
+    background-image: url(../img/book/texturas/vintage-grunge-paper-4.png);
+    background-size: 100%;
     background-repeat: repeat-y;
     display: flex;
     flex-direction: column;
@@ -273,28 +274,46 @@ img.img-heroi-helvakyr{
     height: 600px;
 }
 
-.default-page-left {
+/* .default-page-left {
     background-color: #f0f0e7;
 }
 
 .default-page-right {
     background-color: #e5e6d8;
+} */
+
+.booklet .b-page-cover {
+    background: var(--primary-color) !important;
 }
 
-.number-page-left{
+.fa-hexagon{
     position: absolute;
-    left: 35px;
-    bottom: 30px;
-    font-family: 'Roboto Serif';
-    font-weight: 600;
+    margin-top: -50px;
+    margin-left: -10px;
+    font-size: 25px;
+    color: #a4876b;
+}
+
+/* .number-page-left{
+    text-indent: 204px;
 }
 
 .number-page-right{
-    position: absolute;
-    right: 35px;
-    bottom: 30px;
+    text-indent: 194px;
+} */
+
+.number-page-left, .number-page-right{
+    width: 422px;
     font-family: 'Roboto Serif';
     font-weight: 600;
+    position: absolute;
+    right: 18px;
+    left: 18px;
+    bottom: 18px;
+    font-size: 14px;
+    text-align: center;
+    color: black;
+    background-image: url(./../img/book/details/pagination_v2.png);
 }
 
 .default-page-content {
