@@ -36,6 +36,12 @@ body{
     color: var(--primary-color);
 }
 
+.subtitulo{
+    font-family: 'Augusta';
+    /* font-size: 1.5rem; */
+    color: var(--primary-color);
+}
+
 .conteudo{
     text-indent: 1.5em;
     margin-right: 10px;
@@ -286,11 +292,16 @@ img.img-heroi-helvakyr{
     background: var(--primary-color) !important;
 }
 
-.fa-hexagon{
+.fa-hexagon-custom{
     position: absolute;
     margin-top: -50px;
     margin-left: -10px;
     font-size: 25px;
+    color: #a4876b;
+}
+
+.fa-hexagon-custom-2{
+    font-size: 10px;
     color: #a4876b;
 }
 
@@ -422,3 +433,8 @@ img.img-heroi-helvakyr{
     }
 }
 /* fim animação logo */
+
+.img-haruini{
+    width: 100%;
+    height: 220px;
+}

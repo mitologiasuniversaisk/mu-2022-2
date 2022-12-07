@@ -36,31 +36,31 @@ $(function(){
     });
     $('#pg-5').click(function(e){
         e.preventDefault();
-        $('#margord-book').booklet("gotopage", "11");
+        $('#margord-book').booklet("gotopage", "12");
     });
     $('#pg-6').click(function(e){
         e.preventDefault();
-        $('#margord-book').booklet("gotopage", "13");
+        $('#margord-book').booklet("gotopage", "14");
     });
     $('#pg-7').click(function(e){
         e.preventDefault();
-        $('#margord-book').booklet("gotopage", "15");
+        $('#margord-book').booklet("gotopage", "16");
     });
     $('#pg-8').click(function(e){
         e.preventDefault();
-        $('#margord-book').booklet("gotopage", "16");
+        $('#margord-book').booklet("gotopage", "17");
     });
     $('#pg-9').click(function(e){
         e.preventDefault();
-        $('#margord-book').booklet("gotopage", "20");
+        $('#margord-book').booklet("gotopage", "21");
     });
     $('#pg-10').click(function(e){
         e.preventDefault();
-        $('#margord-book').booklet("gotopage", "22");
+        $('#margord-book').booklet("gotopage", "23");
     });
     $('#pg-11').click(function(e){
         e.preventDefault();
-        $('#margord-book').booklet("gotopage", "24");
+        $('#margord-book').booklet("gotopage", "25");
     });
     $('#pg-12').click(function(e){
         e.preventDefault();
